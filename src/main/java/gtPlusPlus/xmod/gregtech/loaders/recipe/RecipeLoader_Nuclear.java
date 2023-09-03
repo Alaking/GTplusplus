@@ -539,7 +539,7 @@ public class RecipeLoader_Nuclear {
                 .fluidInputs(
                         new FluidStack(ELEMENT.STANDALONE.CELESTIAL_TUNGSTEN.getPlasma(), 250),
                         Materials.TengamAttuned.getMolten(1))
-                .fluidOutputs(new FluidStack(ELEMENT.STANDALONE.ChromaticGlass.getPlasma(), 1000))
+                .fluidOutputs(new FluidStack(ELEMENT.STANDALONE.CHRONOMATIC_GLASS.getPlasma(), 1000))
                 .duration(32 * TICKS).eut(TierEU.RECIPE_UV).metadata(FUSION_THRESHOLD, 500000000).addTo(sFusionRecipes);
 
     }
