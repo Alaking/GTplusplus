@@ -535,6 +535,13 @@ public class RecipeLoader_Nuclear {
                         Materials.Tartarite.getMolten(32))
                 .fluidOutputs(new FluidStack(ELEMENT.STANDALONE.CELESTIAL_TUNGSTEN.getPlasma(), 1000))
                 .duration(16 * TICKS).eut(TierEU.RECIPE_UV).metadata(FUSION_THRESHOLD, 500000000).addTo(sFusionRecipes);
+        GT_Values.RA.stdBuilder().noItemInputs().noItemOutputs()
+                .fluidInputs(
+                        new FluidStack(ELEMENT.STANDALONE.CELESTIAL_TUNGSTEN.getPlasma(), 250),
+                        Materials.TengamAttuned.getMolten(1))
+                .fluidOutputs(new FluidStack(ELEMENT.STANDALONE.ChromaticGlass.getPlasma(), 1000))
+                .duration(32 * TICKS).eut(TierEU.RECIPE_UV).metadata(FUSION_THRESHOLD, 500000000).addTo(sFusionRecipes);
+
     }
 
     private static void macerator() {
