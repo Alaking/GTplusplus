@@ -538,9 +538,13 @@ public class RecipeLoader_Nuclear {
         GT_Values.RA.stdBuilder().noItemInputs().noItemOutputs()
                 .fluidInputs(
                         new FluidStack(ELEMENT.STANDALONE.CELESTIAL_TUNGSTEN.getPlasma(), 250),
-                        Materials.TengamAttuned.getMolten(1))
+                        Materials.Argon.getPlasma(4000))
                 .fluidOutputs(new FluidStack(ELEMENT.STANDALONE.CHRONOMATIC_GLASS.getPlasma(), 1000))
                 .duration(32 * TICKS).eut(TierEU.RECIPE_UV).metadata(FUSION_THRESHOLD, 500000000).addTo(sFusionRecipes);
+        GT_Values.RA.stdBuilder().noItemInputs().noItemOutputs()
+                .fluidInputs(Materials.TengamAttuned.getMolten(1), Materials.TengamPurified.getMolten(144))
+                .fluidOutputs(Materials.Argon.getPlasma(1000)).duration(8 * TICKS).eut(TierEU.RECIPE_UV)
+                .metadata(FUSION_THRESHOLD, 500000000).addTo(sFusionRecipes);
         GT_Values.RA.stdBuilder().noItemInputs().noItemOutputs()
                 .fluidInputs(Materials.SamariumMagnetic.getMolten(144), Materials.TengamPurified.getMolten(144))
                 .fluidOutputs(Materials.TengamAttuned.getMolten(72)).duration(8 * TICKS).eut(TierEU.RECIPE_UV)
