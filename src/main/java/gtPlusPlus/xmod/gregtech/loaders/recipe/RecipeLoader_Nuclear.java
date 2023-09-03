@@ -541,6 +541,26 @@ public class RecipeLoader_Nuclear {
                         Materials.TengamAttuned.getMolten(1))
                 .fluidOutputs(new FluidStack(ELEMENT.STANDALONE.CHRONOMATIC_GLASS.getPlasma(), 1000))
                 .duration(32 * TICKS).eut(TierEU.RECIPE_UV).metadata(FUSION_THRESHOLD, 500000000).addTo(sFusionRecipes);
+        GT_Values.RA.stdBuilder().noItemInputs().noItemOutputs()
+                .fluidInputs(Materials.SamariumMagnetic.getMolten(144), Materials.TengamPurified.getMolten(144))
+                .fluidOutputs(Materials.TengamAttuned.getMolten(72)).duration(8 * TICKS).eut(TierEU.RECIPE_UV)
+                .metadata(FUSION_THRESHOLD, 500000000).addTo(sFusionRecipes);
+        GT_Values.RA.stdBuilder().noItemInputs().noItemOutputs()
+                .fluidInputs(Materials.NeodymiumMagnetic.getMolten(144), Materials.Samarium.getMolten(144))
+                .fluidOutputs(Materials.SamariumMagnetic.getMolten(72)).duration(8 * TICKS).eut(TierEU.RECIPE_UV)
+                .metadata(FUSION_THRESHOLD, 500000000).addTo(sFusionRecipes);
+        GT_Values.RA.stdBuilder().noItemInputs().noItemOutputs()
+                .fluidInputs(Materials.SteelMagnetic.getMolten(144), Materials.Neodymium.getMolten(144))
+                .fluidOutputs(Materials.NeodymiumMagnetic.getMolten(72)).duration(8 * TICKS).eut(TierEU.RECIPE_UV)
+                .metadata(FUSION_THRESHOLD, 500000000).addTo(sFusionRecipes);
+        GT_Values.RA.stdBuilder().noItemInputs().noItemOutputs()
+                .fluidInputs(Materials.IronMagnetic.getMolten(144), Materials.Steel.getMolten(144))
+                .fluidOutputs(Materials.SteelMagnetic.getMolten(72)).duration(8 * TICKS).eut(TierEU.RECIPE_UV)
+                .metadata(FUSION_THRESHOLD, 500000000).addTo(sFusionRecipes);
+        GT_Values.RA.stdBuilder().noItemInputs().noItemOutputs()
+                .fluidInputs(Materials.Helium.getPlasma(1000), Materials.Iron.getPlasma(16))
+                .fluidOutputs(Materials.IronMagnetic.getMolten(72)).duration(8 * TICKS).eut(TierEU.RECIPE_UV)
+                .metadata(FUSION_THRESHOLD, 500000000).addTo(sFusionRecipes);
 
     }
 
